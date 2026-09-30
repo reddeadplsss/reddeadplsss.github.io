@@ -1,59 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ax's personal website about coding, music, and projects.">
 
   <title>Ax's Website</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: white;
-      text-align: center;
-    }
-
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    h1 {
-      font-size: 60px;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 20px;
-      color: #aaa;
-    }
-
-    button {
-      margin-top: 20px;
-      padding: 12px 24px;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div class="page-shell">
+    <header>
+      <p class="eyebrow">welcome</p>
+      <h1>ax</h1>
+      <h2>all about me</h2>
+    </header>
 
-  <div class="hero">
-    <h1>Ax's Website</h1>
-    <p>Welcome to my corner of the internet.</p>
+    <main>
+      <section aria-labelledby="about-me">
+        <h2 id="about-me">about me</h2>
 
-    <button onclick="alert('you clicked the button')">
-      Click Me
-    </button>
+        <p>
+          yo, i'm ax, and this website is a playground for my adventure into coding.
+          i'll talk a little about myself below.
+        </p>
+
+        <p>
+          i'm learning HTML, and this is my first website!
+        </p>
+
+        <p>
+          i've been learning about computers and programming, and i've been trying to
+          experiment with things like GitHub, HTML, and
+          <a href="https://www.raspberrypi.com/" target="_blank" rel="noopener noreferrer">
+            Raspberry Pi
+          </a>.
+        </p>
+
+        <p>
+          i also absolutely love music. one of my favorite artists is
+          <a href="https://en.wikipedia.org/wiki/Tool_(band)" target="_blank" rel="noopener noreferrer">
+            TOOL
+          </a>.
+          i like them because the guitar, which is my favorite, always sounds incredible.
+        </p>
+
+        <p>
+          i won't really be adding anything to the HTML. i'll be focusing mainly on the
+          CSS code so i can make it look good.
+        </p>
+
+        <p>
+          the next time this'll be updated is when i want to add more information or
+          other things in general.
+        </p>
+      </section>
+
+      <section aria-labelledby="socials">
+        <h2 id="socials">my socials</h2>
+
+        <ul class="social-list">
+          <li>
+            <a href="https://discord.gg/kMjQeyRpgW" target="_blank" rel="noopener noreferrer">
+              Discord Server
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@esprifo" target="_blank" rel="noopener noreferrer">
+              YouTube
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
   </div>
-
 </body>
+
 </html>
