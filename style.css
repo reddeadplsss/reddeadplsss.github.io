@@ -84,6 +84,7 @@ nav{
     padding: 20px;
     border: 1px #252525;
     border-radius: 15px;
+    max-width: 400px;
 }
 
 
