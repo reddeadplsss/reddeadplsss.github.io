@@ -79,6 +79,15 @@ a:hover {
     text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
 }
 
+nav{
+    background:#111111;
+    padding: 20px;
+    border: 1px #252525;
+    border-radius: 15px;
+}
+
+
+
 .page-shell {
     max-width: 900px;
     margin: 0 auto;
