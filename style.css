@@ -123,6 +123,16 @@ nav{
   font-size: 16px;
 }
 
+.interest-button {
+    background: #111111;
+    color: #d4af37;
+    border: 1px solid #252525;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+}
 
-
-
+interest.button:hover{
+    color: #ffffff;
+    border-color: #d4af37;
+}
