@@ -113,14 +113,23 @@ nav{
     padding: 40px 20px;
 }
 
+.interest {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
 .interest-content {
     display: none;
     background: #111111;
-  color: #d4af37;
-  border: 1px solid #252525;
-  border-radius: 10px;
-  padding: 12px 20px;
-  font-size: 16px;
+    color: #d4af37;
+    border: 1px solid #252525;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .interest-button {
@@ -130,9 +139,11 @@ nav{
     border-radius: 10px;
     padding: 12px 20px;
     font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
-interest-button:hover{
+.interest-button:hover {
     color: #ffffff;
     border-color: #d4af37;
 }
