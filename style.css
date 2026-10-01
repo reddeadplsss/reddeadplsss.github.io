@@ -116,8 +116,9 @@ nav{
 .interest {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 12px;
+    margin-bottom: 20px;
 }
 
 .interest-content {
