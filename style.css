@@ -132,7 +132,7 @@ nav{
     font-size: 16px;
 }
 
-interest.button:hover{
+interest-button:hover{
     color: #ffffff;
     border-color: #d4af37;
 }
