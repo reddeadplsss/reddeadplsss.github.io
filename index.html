@@ -9,41 +9,29 @@
   <title>Ax's Website</title>
 
   <link rel="stylesheet" href="style.css">
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const buttons = document.querySelectorAll(".interest-button");
-      
-      buttons.forEach(button => {
-        const content = button.nextElementSibling;
-        
-        if (button && content) {
-          button.addEventListener("click", () => {
-            const isHidden = content.style.display === "none" || content.style.display === "";
-            content.style.display = isHidden ? "block" : "none";
-          });
-        }
-      });
-    });
-  </script>
 </head>
 
 <body>
-  <nav>
-<a href="#about-me">about me</a>
-   <a href="#projects">projects</a>
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <nav class="top-nav" aria-label="Main navigation">
+    <a href="#about-me">about me</a>
+    <a href="#interests">interests</a>
+    <a href="#projects">projects</a>
     <a href="#blog">blog</a>
   </nav>
+
   <div class="page-shell">
-    <header>
+    <header class="hero reveal">
       <p class="eyebrow">welcome</p>
       <h1>ax</h1>
       <h2>all about me</h2>
     </header>
 
     <main>
-      <section aria-labelledby="about-me">
-        <h2 id="about-me">about me</h2>
+      <section id="about-me" class="panel reveal" aria-labelledby="about-me-title">
+        <h2 id="about-me-title">about me</h2>
 
         <p>
           yo, i'm ax, and this website is a little blog or "portfolio" if you will.
@@ -73,90 +61,92 @@
         <p>
           i'll update this on my experimentation site later, but i'm really enjoying this general design, so css and html code will probably be updated side by side
         </p>
-        
       </section>
 
-<section aria-labelledby="interests">
-  <h2 id="interests">interests</h2>
-  <p>
-  should i add more? 🤔
-  </p>
-  <p>
-    (i probably will later)
-</small></p>
+      <section id="interests" class="panel reveal" aria-labelledby="interests-title">
+        <h2 id="interests-title">interests</h2>
+        <p class="section-lead">should i add more? 🤔</p>
+        <p class="section-note">(i probably will later)</p>
 
-  <div class = "interest">
-    <button type="button" class = "interest-button">clowning</button>
+        <div class="interest-list">
+          <div class="interest">
+            <button type="button" class="interest-button" aria-expanded="false">
+              <span>clowning</span>
+              <span class="chevron" aria-hidden="true">+</span>
+            </button>
 
-    <div class="interest-content">
-      <p>
-        i absolutely love jesters, clowns, and doing clown makeup.
-      </p>
-    </div>
-  </div>
+            <div class="interest-content" hidden>
+              <p>
+                i absolutely love jesters, clowns, and doing clown makeup.
+              </p>
+            </div>
+          </div>
 
-  <div class = "interest">
-    <button type="button" class = "interest-button">spirituality</button>
+          <div class="interest">
+            <button type="button" class="interest-button" aria-expanded="false">
+              <span>spirituality</span>
+              <span class="chevron" aria-hidden="true">+</span>
+            </button>
 
-    <div class="interest-content">
-      <p>
-        i'm on an independent spiritual journey, i'm educating myself on spiritual practices and buddhism!
-      </p>
-      <p>
-        i will probably post on this website whenever i learn something new, or do something new
-      </p>
-    </div>
-  </div>
+            <div class="interest-content" hidden>
+              <p>
+                i'm on an independent spiritual journey, i'm educating myself on spiritual practices and buddhism!
+              </p>
+              <p>
+                i will probably post on this website whenever i learn something new, or do something new
+              </p>
+            </div>
+          </div>
 
-  <div class = "interest">
-    <button type="button" class = "interest-button">animated media</button>
+          <div class="interest">
+            <button type="button" class="interest-button" aria-expanded="false">
+              <span>animated media</span>
+              <span class="chevron" aria-hidden="true">+</span>
+            </button>
 
-    <div class="interest-content">
-      <h2>
-        just a list of my favorite animes/animated shows
-      </h2>
-      <p>
-        jojos, DBZ, hellsing, neon genesis evangelion, serial experiments lain, and Paprika(2006) 
-      </p>
-      
-    </div>
-  </div>
-</section>
-      
+            <div class="interest-content" hidden>
+              <h3>just a list of my favorite animes/animated shows</h3>
+              <p>
+                jojos, DBZ, hellsing, neon genesis evangelion, serial experiments lain, and Paprika(2006)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section aria-labelledby="projects">
-  <h2 id="projects">projects</h2>
+      <section id="projects" class="panel reveal" aria-labelledby="projects-title">
+        <h2 id="projects-title">projects</h2>
 
-  <p>
-    here's some of the stuff i've been working on and learning about.
-  </p>
-
-  <h3>personal website</h3>
-  <p>
-    my first website, built with HTML and CSS while learning how web development works.
-  </p>
-
-  <h3>raspberry pi</h3>
-  <p>
-    experimenting with Linux, Raspberry Pi, and different computer projects.
-  </p>
-<h3>youtube stuff</h3>
-<p>
-  i've been trying to get into youtube & editing videos. 
-  i plan on making a video around spirituality or buddhism for my next one
-</p>
-  
-</section>
-
-      <section>
-  <h2 id="blog">blog</h2>
         <p>
-        this is where i'll write about the things i'm learning, and where i will post my most recent youtube video.
+          here's some of the stuff i've been working on and learning about.
+        </p>
+
+        <h3>personal website</h3>
+        <p>
+          my first website, built with HTML and CSS while learning how web development works.
+        </p>
+
+        <h3>raspberry pi</h3>
+        <p>
+          experimenting with Linux, Raspberry Pi, and different computer projects.
+        </p>
+
+        <h3>youtube stuff</h3>
+        <p>
+          i've been trying to get into youtube & editing videos.
+          i plan on making a video around spirituality or buddhism for my next one
         </p>
       </section>
 
-      <section aria-labelledby="socials">
-        <h2 id="socials">my socials</h2>
+      <section id="blog" class="panel reveal" aria-labelledby="blog-title">
+        <h2 id="blog-title">blog</h2>
+        <p>
+          this is where i'll write about the things i'm learning, and where i will post my most recent youtube video.
+        </p>
+      </section>
+
+      <section id="socials" class="panel reveal" aria-labelledby="socials-title">
+        <h2 id="socials-title">my socials</h2>
 
         <ul class="social-list">
           <li>
@@ -171,9 +161,36 @@
           </li>
         </ul>
       </section>
-
     </main>
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const revealItems = document.querySelectorAll(".reveal");
+      revealItems.forEach((item, index) => {
+        item.style.animationDelay = `${index * 0.12}s`;
+      });
+
+      const buttons = document.querySelectorAll(".interest-button");
+
+      buttons.forEach((button) => {
+        const content = button.nextElementSibling;
+
+        if (!content) return;
+
+        button.addEventListener("click", () => {
+          const isExpanded = button.getAttribute("aria-expanded") === "true";
+          const nextState = !isExpanded;
+
+          button.setAttribute("aria-expanded", String(nextState));
+          button.querySelector(".chevron").textContent = nextState ? "−" : "+";
+
+          content.hidden = !nextState;
+          content.classList.toggle("open", nextState);
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
