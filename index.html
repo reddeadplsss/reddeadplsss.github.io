@@ -12,15 +12,18 @@
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      const button = document.querySelector(".interest-button");
-      const content = document.querySelector(".interest-content");
-
-      if (button && content) {
-        button.addEventListener("click", () => {
-          const isHidden = content.style.display === "none" || content.style.display === "";
-          content.style.display = isHidden ? "block" : "none";
-        });
-      }
+      const buttons = document.querySelectorAll(".interest-button");
+      
+      buttons.forEach(button => {
+        const content = button.nextElementSibling;
+        
+        if (button && content) {
+          button.addEventListener("click", () => {
+            const isHidden = content.style.display === "none" || content.style.display === "";
+            content.style.display = isHidden ? "block" : "none";
+          });
+        }
+      });
     });
   </script>
 </head>
@@ -73,7 +76,7 @@
         
       </section>
 
-<section aria-lablledby="interests">
+<section aria-labelledby="interests">
   <h2 id="interests">interests</h2>
 
   <div class = "interest">
@@ -84,7 +87,27 @@
         i absolutely love jesters, clowns, and doing clown makeup.
       </p>
     </div>
-  </div> 
+  </div>
+
+  <div class = "interest">
+    <button type="button" class = "interest-button">coding this website</button>
+
+    <div class="interest-content">
+      <p>
+        [add your description here]
+      </p>
+    </div>
+  </div>
+
+  <div class = "interest">
+    <button type="button" class = "interest-button">animes i enjoy</button>
+
+    <div class="interest-content">
+      <p>
+        [add your description here]
+      </p>
+    </div>
+  </div>
 </section>
       
 
