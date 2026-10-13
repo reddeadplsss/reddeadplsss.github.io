@@ -12,6 +12,8 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
   <div class="background-glow glow-one"></div>
   <div class="background-glow glow-two"></div>
 
@@ -20,6 +22,7 @@
     <a href="#interests">interests</a>
     <a href="#projects">projects</a>
     <a href="#blog">blog</a>
+    <a href="#socials">socials</a>
   </nav>
 
   <div class="page-shell">
@@ -29,7 +32,7 @@
       <h2>all about me</h2>
     </header>
 
-    <main>
+    <main id="main-content">
       <section id="about-me" class="panel reveal" aria-labelledby="about-me-title">
         <h2 id="about-me-title">about me</h2>
 
@@ -39,7 +42,8 @@
         </p>
 
         <p>
-          i'm learning HTML, and this is my second website! (my first is "html-sandbox" on my github)
+          i'm learning HTML, and this is my second website. my first was "html-sandbox"
+          on my GitHub.
         </p>
 
         <p>
@@ -59,7 +63,8 @@
         </p>
 
         <p>
-          i'll update this on my experimentation site later, but i'm really enjoying this general design, so css and html code will probably be updated side by side
+          i'll update this on my experimentation site later, but i'm really enjoying this
+          general design, so CSS and HTML code will probably be updated side by side.
         </p>
       </section>
 
@@ -70,69 +75,88 @@
 
         <div class="interest-list">
           <div class="interest">
-            <button type="button" class="interest-button" aria-expanded="false">
+            <button
+              type="button"
+              class="interest-button"
+              aria-expanded="false"
+              aria-controls="interest-clowning"
+            >
               <span>clowning</span>
               <span class="chevron" aria-hidden="true">+</span>
             </button>
 
-            <div class="interest-content" hidden>
-              <p>
-                i absolutely love jesters, clowns, and doing clown makeup.
-              </p>
+            <div id="interest-clowning" class="interest-content" hidden>
+              <p>i absolutely love jesters, clowns, and doing clown makeup.</p>
             </div>
           </div>
 
           <div class="interest">
-            <button type="button" class="interest-button" aria-expanded="false">
+            <button
+              type="button"
+              class="interest-button"
+              aria-expanded="false"
+              aria-controls="interest-spirituality"
+            >
               <span>spirituality</span>
               <span class="chevron" aria-hidden="true">+</span>
             </button>
 
-            <div class="interest-content" hidden>
+            <div id="interest-spirituality" class="interest-content" hidden>
               <p>
-                i'm on an independent spiritual journey, i'm educating myself on spiritual practices and buddhism!
+                i'm on an independent spiritual journey, and i'm educating myself on spiritual
+                practices and Buddhism.
               </p>
               <p>
-                i will probably post on this website whenever i learn something new, or do something new
+                i will probably post on this website whenever i learn something new or do something new.
               </p>
             </div>
           </div>
 
           <div class="interest">
-            <button type="button" class="interest-button" aria-expanded="false">
+            <button
+              type="button"
+              class="interest-button"
+              aria-expanded="false"
+              aria-controls="interest-animation"
+            >
               <span>animated media</span>
               <span class="chevron" aria-hidden="true">+</span>
             </button>
 
-            <div class="interest-content" hidden>
-              <h3>just a list of my favorite animes/animated shows</h3>
+            <div id="interest-animation" class="interest-content" hidden>
+              <h3>just a list of my favorite anime/animated shows</h3>
               <p>
-                jojos, DBZ, hellsing, neon genesis evangelion, serial experiments lain, and Paprika(2006)
+                jojo's bizarre adventure, DBZ, Hellsing, Neon Genesis Evangelion, Serial Experiments Lain,
+                and Paprika (2006).
               </p>
             </div>
           </div>
-            
-            <div class="interest">
-              <button type="button" class="interest-button" aria-expanded="false">
-                <span>rping/making oc's</span>
-                <span class="chevron" aria-hidden="true">+</span>
-              </button>
 
-              <div class="interest-content" hidden>
-                <p>
-                  i have an interest in making oc's with my partner, and then we either rp as the characters, or create lore and designs for them.
-                </p>
-              </div> 
+          <div class="interest">
+            <button
+              type="button"
+              class="interest-button"
+              aria-expanded="false"
+              aria-controls="interest-rp"
+            >
+              <span>rping / making oc's</span>
+              <span class="chevron" aria-hidden="true">+</span>
+            </button>
+
+            <div id="interest-rp" class="interest-content" hidden>
+              <p>
+                i have an interest in making OC's with my partner, and then we either RP as the characters,
+                or create lore and designs for them.
+              </p>
             </div>
+          </div>
         </div>
       </section>
 
       <section id="projects" class="panel reveal" aria-labelledby="projects-title">
         <h2 id="projects-title">projects</h2>
 
-        <p>
-          here's some of the stuff i've been working on and learning about.
-        </p>
+        <p>here's some of the stuff i've been working on and learning about.</p>
 
         <h3>personal website</h3>
         <p>
@@ -146,26 +170,25 @@
 
         <h3>youtube stuff</h3>
         <p>
-          i've been trying to get into youtube & editing videos.
-          i plan on making a video around spirituality or buddhism for my next one
-        </p>
-        
-       <h3>oc stuff</h3>
-        <p>
-            i'm working on a german oc named "Itchy"
-            you can check out his lore 
-          <a href="https://docs.google.com/document/d/1l0VjUp7Pug92AGEcwC1_rZrNrwJbqiKDgz9QGNg4eV0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">here</a>
-        </p>
-        <p>
-          i'm also working on a clown oc named "JoJo." i don't have much on him yet :cry:
+          i've been trying to get into YouTube and editing videos. i plan on making a video about
+          spirituality or Buddhism for my next one.
         </p>
 
+        <h3>oc stuff</h3>
+        <p>
+          i'm working on a German OC named "Itchy." you can check out his lore
+          <a href="https://docs.google.com/document/d/1l0VjUp7Pug92AGEcwC1_rZrNrwJbqiKDgz9QGNg4eV0/edit?usp=sharing" target="_blank" rel="noopener noreferrer">here</a>.
+        </p>
+        <p>
+          i'm also working on a clown OC named "JoJo." i don't have much on him yet :cry:
+        </p>
       </section>
 
       <section id="blog" class="panel reveal" aria-labelledby="blog-title">
         <h2 id="blog-title">blog</h2>
         <p>
-          this is where i'll write about the things i'm learning, and where i will post my most recent youtube video.
+          this is where i'll write about the things i'm learning, and where i will post my most recent
+          YouTube video.
         </p>
       </section>
 
@@ -188,6 +211,10 @@
     </main>
   </div>
 
+  <footer class="site-footer">
+    <p>made with html, css, and a bit of curiosity.</p>
+  </footer>
+
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const revealItems = document.querySelectorAll(".reveal");
@@ -199,6 +226,7 @@
 
       buttons.forEach((button) => {
         const content = button.nextElementSibling;
+        const chevron = button.querySelector(".chevron");
 
         if (!content) return;
 
@@ -207,7 +235,9 @@
           const nextState = !isExpanded;
 
           button.setAttribute("aria-expanded", String(nextState));
-          button.querySelector(".chevron").textContent = nextState ? "−" : "+";
+          if (chevron) {
+            chevron.textContent = nextState ? "−" : "+";
+          }
 
           content.hidden = !nextState;
           content.classList.toggle("open", nextState);
