@@ -193,18 +193,32 @@
           YouTube video.
         </p>
 
-        <figure class="embed-video">
-          <iframe
-            src="https://www.youtube.com/embed/0WOOefYO5xE"
-            title="a crappy video i made for a school project, better is soon to come."
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            loading="lazy"></iframe>
-          <figcaption> namek review</figcaption>
-        </figure>
+        <div class="interest-list">
+          <div class="interest">
+            <button
+              type="button"
+              class="interest-button"
+              aria-expanded="false"
+              aria-controls="blog-video-content"
+            >
+              <span>latest video</span>
+              <span class="chevron" aria-hidden="true">+</span>
+            </button>
 
-        <!-- Social buttons moved here -->
+            <div id="blog-video-content" class="interest-content" hidden>
+              <figure class="embed-video">
+                <iframe
+                  src="https://www.youtube.com/embed/0WOOefYO5xE"
+                  title="a crappy video i made for a school project, better is soon to come."
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"></iframe>
+                <figcaption>namek review</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
         <div class="social-buttons" aria-label="Social links">
           <a class="social-button discord" href="https://discord.gg/kMjQeyRpgW" target="_blank" rel="noopener noreferrer">
             Discord Server
@@ -215,8 +229,6 @@
           </a>
         </div>
       </section>
-
-      <!-- socials section removed (moved into blog) -->
     </main>
   </div>
 
