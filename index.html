@@ -185,48 +185,100 @@
         </p>
       </section>
 
-      <section id="blog" class="panel reveal" aria-labelledby="blog-title">
-        <h2 id="blog-title">blog</h2>
-        <p>
-          this is where i'll write about the things i'm learning, and where i will post my most recent
-          YouTube video.
-        </p>
+      <section id="blog" class="panel reveal blog-section" aria-labelledby="blog-title">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">writing</p>
+            <h2 id="blog-title">blog</h2>
+          </div>
+          <a class="text-link" href="#posts">all posts</a>
+        </div>
 
-        <div class="interest-list">
-          <div class="interest">
-            <button
-              type="button"
-              class="interest-button"
-              aria-expanded="false"
-              aria-controls="blog-video-content"
-            >
-              <span>latest video</span>
-              <span class="chevron" aria-hidden="true">+</span>
-            </button>
+        <article class="featured-post">
+          <div class="post-meta">
+            <span>featured</span>
+            <time datetime="2026-10-23">oct 23, 2026</time>
+            <span>4 min read</span>
+          </div>
+          <h3>learning in public, one tiny experiment at a time</h3>
+          <p>
+            i've been trying to make this site feel more personal and a little more intentional.
+            lately, that has meant figuring out how to write plainly, design with restraint, and make
+            each section feel like it belongs in a real blog instead of a random landing page.
+          </p>
+          <div class="post-actions">
+            <a href="#posts">read more</a>
+          </div>
+        </article>
 
-            <div id="blog-video-content" class="interest-content" hidden>
-              <figure class="embed-video">
-                <iframe
-                  src="https://www.youtube.com/embed/0WOOefYO5xE"
-                  title="a crappy video i made for a school project, better is soon to come."
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                  loading="lazy"></iframe>
-                <figcaption>namek review</figcaption>
-              </figure>
+        <div class="blog-grid" id="posts">
+          <article class="post-card">
+            <div class="post-meta slim">
+              <time datetime="2026-10-18">oct 18</time>
+              <span>3 min read</span>
+            </div>
+            <h3>my first real attempt at building a webpage</h3>
+            <p>
+              a quick look at what i've learned while making my own personal site and why every little
+              design choice matters.
+            </p>
+            <a href="#" aria-label="Read post about my first web page">read entry</a>
+          </article>
+
+          <article class="post-card">
+            <div class="post-meta slim">
+              <time datetime="2026-10-09">oct 9</time>
+              <span>5 min read</span>
+            </div>
+            <h3>thinking about creativity and making things</h3>
+            <p>
+              this is my note to self about writing more, experimenting more, and not being afraid of
+              the ugly first draft.
+            </p>
+            <a href="#" aria-label="Read post about creativity and making things">read entry</a>
+          </article>
+
+          <article class="post-card">
+            <div class="post-meta slim">
+              <time datetime="2026-09-27">sep 27</time>
+              <span>2 min read</span>
+            </div>
+            <h3>what i'm learning with Raspberry Pi</h3>
+            <p>
+              tiny projects, weird setups, and a lot of trial and error while getting more comfortable with
+              Linux and hardware.
+            </p>
+            <a href="#" aria-label="Read post about Raspberry Pi learning">read entry</a>
+          </article>
+        </div>
+
+        <aside class="blog-sidebar">
+          <div class="mini-panel">
+            <h3>latest video</h3>
+            <figure class="embed-video">
+              <iframe
+                src="https://www.youtube.com/embed/0WOOefYO5xE"
+                title="a crappy video i made for a school project, better is soon to come."
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"></iframe>
+              <figcaption>namek review</figcaption>
+            </figure>
+          </div>
+
+          <div class="mini-panel">
+            <h3>elsewhere</h3>
+            <div class="social-buttons" aria-label="Social links">
+              <a class="social-button discord" href="https://discord.gg/kMjQeyRpgW" target="_blank" rel="noopener noreferrer">
+                Discord
+              </a>
+
+              <a class="social-button youtube" href="https://www.youtube.com/@esprifo" target="_blank" rel="noopener noreferrer">
+                YouTube
+              </a>
             </div>
           </div>
-        </div>
-
-        <div class="social-buttons" aria-label="Social links">
-          <a class="social-button discord" href="https://discord.gg/kMjQeyRpgW" target="_blank" rel="noopener noreferrer">
-            Discord Server
-          </a>
-
-          <a class="social-button youtube" href="https://www.youtube.com/@esprifo" target="_blank" rel="noopener noreferrer">
-            YouTube
-          </a>
-        </div>
+        </aside>
       </section>
     </main>
   </div>
