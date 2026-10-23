@@ -411,6 +411,7 @@ main {
 }
 
 .blog-grid {
+  grid-column: 1 / 2;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.25rem;
@@ -530,6 +531,7 @@ main {
   }
 
   .blog-grid {
+    grid-column: 1 / -1;
     grid-template-columns: 1fr;
   }
 }
