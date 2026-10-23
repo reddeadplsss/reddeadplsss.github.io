@@ -412,7 +412,7 @@ main {
 
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.25rem;
   min-width: 0;
 }
@@ -423,7 +423,7 @@ main {
   gap: 0.7rem;
   border-radius: 0.95rem;
   padding: 1.45rem 1.3rem;
-  min-height: 260px;
+  min-height: 220px;
   min-width: 0;
   transform: scale(0.98);
   transform-origin: center top;
